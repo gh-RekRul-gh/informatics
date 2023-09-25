@@ -39,10 +39,9 @@ functionVector = functionVector.upper()
 functionBin = bin(int(functionVector, 16))[2:]
 functionBin = '0' * (len(functionVector) * 4 - len(functionBin)) + functionBin
 n = int(log2(len(functionBin)))
-print(n)
 sdnf = ''
 sknf = ''
 print(functionBin)
 main('', n)
-print(sdnf)
-print(sknf)
+print("sdnf:", sdnf)
+print("sknf:", sknf)
