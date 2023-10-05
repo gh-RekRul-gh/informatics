@@ -20,9 +20,11 @@ def truthTable(currentSetOfNumbers):
     return
 
 
+print("Введите вектор функции")
 functionVector = input()
 functionVector = functionVector.upper()
 functionBin = bin(int(functionVector, 16))[2:]
 functionBin = '0' * (len(functionVector) * 4 - len(functionBin)) + functionBin
+print("Binary function is", functionBin)
 n = int(log2(len(functionBin)))
 truthTable('')
